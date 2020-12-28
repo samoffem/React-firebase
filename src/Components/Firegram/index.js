@@ -7,7 +7,7 @@ import UploadForm from './UploadForm'
 function Dashboard() {
   const [selectedImage, setSelectedImage] = useState(null)
   return (
-    <div className="App">
+    <div className="dashboard">
       <Title />
       <UploadForm />
       <ImageGrid setSelectedImage={setSelectedImage} />

@@ -21,7 +21,7 @@ const UploadForm = () => {
     }
 
     return (
-       <form>
+       <form className="upload-form">
            <label htmlFor="upload">
             <input id="upload" type="file" onChange={changeHandler} />
             <span>+</span>
