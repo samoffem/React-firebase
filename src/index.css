@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+:root{
+  --primary: #efb6b2;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: "Noto Serif";
+  color: var(--secondary);
+}
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.title h1{
+  color: var(--primary);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.title h2, .title p{
+  text-align: center;
+}
+.title h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
+form{
+  text-align: center;
+}
+label{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px auto;
+  border: 1px solid var(--primary);
+  padding: 5px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: bold;
+  line-height: 24px;
+}
+label:hover{
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid #fff;
+}
+label input{
+  display: none;
+}
+
+.progress-bar{
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+
+/*=============Image Grid Styles=====================*/
+.img-grid{
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.img-wrapper{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+}
+.img-wrapper img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*====================Modal style ================*/
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.backdrop img{
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 60px auto;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+}
